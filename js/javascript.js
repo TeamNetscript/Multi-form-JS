@@ -129,3 +129,39 @@ $(".keywords").delegate(".remove", "click", function () {
 $("fieldset").delegate(".removeOrder", "click", function () {
   $(this).closest(".card").remove();
 });
+
+
+window.addEventListener("load", (event) => {
+   var btnx = document.getElementById('screenF'); 
+   btnx.disabled  = true;
+   var btns = document.getElementById('screenS'); 
+   btns.disabled  = true;
+   var btnt = document.getElementById('screenT'); 
+   btnt.disabled  = true;
+   var btnfo = document.getElementById('screenFo'); 
+   btnfo.disabled  = true;
+   var btnfi = document.getElementById('screenFi'); 
+   btnfi.disabled  = true;
+   var btnsi = document.getElementById('screenSi'); 
+   btnsi.disabled  = true;
+   var btnse = document.getElementById('screenSe'); 
+   btnse.disabled  = true;
+   var btnei = document.getElementById('screenEi'); 
+   btnei.disabled  = true;
+   var btnni = document.getElementById('screenNi'); 
+   btnni.disabled  = true;
+
+   $('input[type=radio][name=gender]').change(function() {
+      btnx.disabled  = false;
+    });
+     
+   $('input[type=radio][name=old]').change(function() {btns.disabled  = false;});
+   $('input[type=text][value=weight]').change(function() {btnt.disabled  = false;});
+   $('input[type=radio][name=backpain]').change(function() {btnfo.disabled  = false;});
+   $('input[type=radio][name=time]').change(function() {btnfi.disabled  = false;});
+   $('input[type=radio][name=experience-pain]').change(function() {btnsi.disabled  = false;});
+   $('input[type=text][name=suffering-pain]').change(function() {btnse.disabled  = false;});
+   $('input[type=radio][name=outcome]').change(function() {btnei.disabled  = false;});
+   $('input[type=text][name=name]').change(function() {btnni.disabled  = false;});
+    
+}); 

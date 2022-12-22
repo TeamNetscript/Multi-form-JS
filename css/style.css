@@ -26,6 +26,8 @@ html {
   position: absolute;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
+  left: 0px;
+  right: 0px;
 }
 #msform fieldset:not(:first-of-type) {
   display: none;
